@@ -367,7 +367,7 @@ no-repeat;
 /*5th block*/
 
 .design {
-
+    margin-bottom: 40px;
     background: url("../images/devices-bg.jpg") center
     no-repeat;
     background-size: cover;
@@ -394,41 +394,6 @@ no-repeat;
 
 /*6th block*/
 
-.what__we__do {
-    width: auto;
-    max-width: 100%;
-    height: 800px;
-
-    text-align: center;
-}
-
-.what__suptitle {
-    padding-top: 110px;
-    font-size: 25px;
-    color: #333;
-    font-family: 'Kaushan Script', cursive;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.what__title {
-    text-align: center;
-    color: #333;
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 2;
-}
-
-.what__title:after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #f38181;
-    margin: 30px auto;
-}
-
 .photoBarContainer{
     width: 100%;
     margin-top: 40px;
@@ -448,6 +413,7 @@ no-repeat;
 }
 
 .bar__item {
+    position: relative;
     width: 600px;
     height: 60px;
     border: 1px solid #e5e5e5;
@@ -464,28 +430,20 @@ no-repeat;
 
 .bar__item:after {
     content: '';
+    display: block;
     position: absolute;
-    left: 0;
-    width: 13px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(40deg);
+    top: 50%;
+    right: 20px;
+    z-index: 1;
 
-    margin-left: 85%;
-    margin-top: 10px;
-}
 
-.bar__item:before{
-    content: '';
-    position: absolute;
-    left: -5px;
-    width: 12px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(-40deg);
+    width: 16px;
+    height: 16px;
 
-    margin-left: 85%;
-    margin-top: 10px;
+    border-top: 2px solid #cccccc ;
+    border-right: 2px solid #cccccc ;
+
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 .design__icon {
@@ -501,14 +459,14 @@ no-repeat;
     width: 600px;
     border: 1px solid #e5e5e5;
 
-    font-weight: 700;
     padding: 10px;
 
     text-align: left;
+    font-weight: 300;
     vertical-align: center;
     height: 180px;
     color: #cccccc;
-    font-family: cursive;
+    font-style: italic;
     font-size: 15px;
     text-transform: none;
     border-right: 9px solid #f5f5f5;
@@ -528,6 +486,7 @@ no-repeat;
 }
 
 .bar__cell {
+    position: relative;
     width: 600px;
     height: 60px;
     border: 1px solid #e5e5e5;
@@ -544,29 +503,22 @@ no-repeat;
 
 .bar__cell:after {
     content: '';
+    display: block;
     position: absolute;
-    left: 0;
-    width: 13px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(-40deg);
+    top: 50%;
+    right: 20px;
+    z-index: 1;
 
-    margin-left: 85%;
-    margin-top: 10px;
+
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #cccccc ;
+    border-right: 2px solid #cccccc ;
+
+    transform: translateY(-50%) rotate(135deg);
 }
 
-.bar__cell:before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    width: 12px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(40deg);
-
-    margin-left: 85%;
-    margin-top: 10px;
-}
 
 /*7th block*/
 
@@ -587,6 +539,7 @@ no-repeat;
 
 
 .talk__cloud {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 150px;
@@ -596,37 +549,31 @@ no-repeat;
 
 }
 
-.talk__cloud:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 14px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(-120deg);
-
-    margin-left: 15%;
-    margin-top: 75px;
-}
-
 .talk__cloud:before {
     content: '';
+    display: block;
     position: absolute;
-    left: -5px;
-    width: 14px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(-220deg);
+    top: 50%;
+    left: -80px;
+    z-index: 1;
 
-    margin-left: 15.4%;
-    margin-top: 66px;
+
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #cccccc ;
+    border-right: 2px solid #cccccc ;
+
+    transform: translateY(-50%) rotate(230deg);
 }
+
 
 .comment__image {
     align-self:center;
 }
 
 .comment__text {
+    position: relative;
     display: flex;
     width: 767px;
     height: 96px;
@@ -641,29 +588,22 @@ no-repeat;
 
 .comment__text:after {
     content: '';
+    display: block;
     position: absolute;
-    right: 0;
-    width: 14px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(120deg);
+    top: 60%;
+    right: -80px;
+    z-index: 1;
 
-    margin-right: 15%;
-    margin-top: 75px;
+
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #cccccc ;
+    border-right: 2px solid #cccccc ;
+
+    transform: translateY(-50%) rotate(45deg);
 }
 
-.comment__text:before {
-    content: '';
-    position: absolute;
-    right: -5px;
-    width: 14px;
-    height: 4px;
-    background: #cccccc;
-    transform: rotate(220deg);
-
-    margin-right: 15.4%;
-    margin-top: 66px;
-}
 
 .comment__sigh {
     position: absolute;
@@ -687,49 +627,8 @@ no-repeat;
     margin: 20px 10px;
 }
 
-/* custom views */
-
-/*.arrow_left {*/
-/*    width: 50px;*/
-/*    height: 50px;*/
-/*    background-color: transparent;*/
-/*}*/
-
-/*.arrow_left:after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    width: 14px;*/
-/*    height: 4px;*/
-/*    background: #cccccc;*/
-/*    transform: rotate(-40deg);*/
-
-/*    margin-left: 15%;*/
-/*    margin-top: 10px;*/
-/*}*/
-
-/*.arrow_left:before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    left: -5px;*/
-/*    width: 10px;*/
-/*    height: 3px;*/
-/*    background: #cccccc;*/
-/*    transform: rotate(40deg);*/
-
-/*    margin-left: 15%;*/
-/*    margin-top: 10px;*/
-/*}*/
-
 /*8th block*/
 
-.team_container {
-    width: auto;
-    max-width: 100%;
-    height: 1050px;
-
-    text-align: center;
-}
 
 .workers_photo {
     margin: 90px auto;
@@ -782,13 +681,6 @@ no-repeat;
     text-align: center;
 }
 
-/*.title__container {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    margin: 0 auto;*/
-
-/*    text-align: center;*/
-/*}*/
 
 .worker__name {
     font-size: 16px;
@@ -833,11 +725,6 @@ no-repeat;
 
 /*10th block*/
 
-.our_works {
-    width: auto;
-    max-width: 100%;
-    text-align: center;
-}
 
 .example_of_work {
     width: 100%;
@@ -871,8 +758,6 @@ no-repeat;
 /*11th block*/
 
 .what_people_say {
-    width: auto;
-    max-width: 100%;
     background: #d6d4ce;
     background-size: cover;
 }
@@ -881,7 +766,6 @@ no-repeat;
     display: flex;
     justify-content: space-between;
     margin: 50px;
-    /*background: #d6d4ce;*/
 }
 
 .attitude_column {
@@ -952,13 +836,7 @@ no-repeat;
 }
 
 /*12th block*/
-.blog {
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    margin: 0 auto;
 
-}
 
 .article_container {
     width: 32%;
