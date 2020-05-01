@@ -730,17 +730,16 @@ no-repeat;
 
 
 .example_of_work {
-    width: 100%;
-    margin-top: 102px;
-    margin-bottom: 20px;
 
     display: flex;
-    justify-content: normal;
+
 }
 
 .photo_work {
     width: 100%;
     height: calc(20vw);
+
+    transition: opacity .1s linear;
 }
 
 .photo_work_big{
@@ -748,20 +747,63 @@ no-repeat;
     height: calc(40vw);
 }
 
-.photo_work:hover {
-   filter: grayscale(100%);
-}
 
 .column_photo {
-    width: 25%;
-    display: block;
-    justify-content: normal;
+   flex: 1 1 0;
+}
+
+.works_item {
+    position: relative;
+
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+
+
+}
+
+.works_item:hover .photo_work,
+ .works_item:hover .photo_work_big {
+     opacity: .1;
+ }
+
+.works_item:hover .works_info{
+    opacity: 1;
+}
+
+
+.works_info {
+
+    width: 100%;
+
+    text-align: center;
+    color: #fff;
+    padding: 0 15px;
+    position: absolute;
+    top:50%;
+    left:0;
+    z-index: 1;
+    opacity: 0;
+
+
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+
+.works_title {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.works_text {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
 }
 
 /*11th block*/
 
 .what_people_say {
-    background: #d6d4ce;
+    background: url("../images/clients-bg.jpg") center
+    no-repeat;
     background-size: cover;
 }
 
