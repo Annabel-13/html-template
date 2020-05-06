@@ -1044,13 +1044,20 @@ no-repeat;
 }
 
 .follow_us {
-    width: auto;
-    height: 65px;
-    color: #e0e0e0;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.follow_us__text {
+    color: #c9c9c9;
     font-style: italic;
     text-transform: capitalize;
-    margin: 10px 0;
-    vertical-align: center;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.follow_us_icons {
+   color: #95e1d3;
 }
 
 .icon_footer {
