@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300, 400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
@@ -38,19 +39,19 @@
         <div class="slider">
             <div class="intro__item active">
                 <span class="slider__num">01</span>
-                intro
+                <span class="slider_text"> intro</span>
             </div>
             <div class="intro__item">
                 <span class="slider__num">02</span>
-                work
+                <span class="slider_text"> work</span>
             </div>
             <div class="intro__item">
                 <span class="slider__num">03</span>
-                about
+                <span class="slider_text">about </span>
             </div>
             <div class="intro__item">
                 <span class="slider__num">04</span>
-                contacts
+                <span class="slider_text"> contacts</span>
             </div>
         </div>
     </div>
@@ -70,18 +71,24 @@
 
 
         <div class="picture__container">
-            <div class="picture_box_container">
-                <div class="picture__box" ><img src="assets/images/about/1.jpg" alt="">
+            <div class="card_item">
+                <div class="picture_box_container">
+                    <div class="picture__box" ><img src="assets/images/about/1.jpg" alt="">
+                    </div>
+                    <div class="picture_text">super team</div>
                 </div>
-                <div class="picture_text">super team</div>
             </div>
+            <div class="card_item">
             <div class="picture_box_container">
                 <div class="picture__box" ><img src="assets/images/about/2.jpg" alt=""></div>
                 <div class="picture_text">super team</div>
             </div>
+            </div>
+            <div class="card_item">
             <div class="picture_box_container">
                 <div class="picture__box" ><img src="assets/images/about/3.jpg" alt=""></div>
                 <div class="picture_text">super team</div>
+            </div>
             </div>
 
         </div>
@@ -221,7 +228,9 @@
         </div>
 
         <div class="picture__container">
+            <div class="card_item">
             <div class="picture__text__container">
+
             <div class="picture_box_container">
                 <div class="picture__box" ><img src="assets/images/team/1.jpg" alt="">
                 </div>
@@ -238,7 +247,9 @@
                 <h4 class="worker__position">developer</h4>
             </div>
             </div>
+            </div>
 
+            <div class="card_item">
             <div class="picture__text__container">
             <div class="picture_box_container">
                 <div class="picture__box" ><img src="assets/images/team/2.jpg" alt=""></div>
@@ -255,7 +266,9 @@
                 <h4 class="worker__position">branding/UX design</h4>
             </div>
             </div>
+            </div>
 
+            <div class="card_item">
             <div class="picture__text__container">
             <div class="picture_box_container">
                 <div class="picture__box" ><img src="assets/images/team/3.jpg" alt=""></div>
@@ -272,6 +285,8 @@
                 <h4 class="worker__position">graphic design</h4>
             </div>
             </div>
+            </div>
+
 
         </div>
     </div>
@@ -583,21 +598,37 @@
                 <div class="count_follower"><b>15k</b> followers</div>
                 <div class="follow_us"><p class="follow_us__text">follow us:</p>
                     <div class="follow_us_icons">
+                        <a href="#">
                         <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
                         <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
                         <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#">
                         <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
                         <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
                         <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#">
                         <i class="fab fa-tumblr"></i>
+                        </a>
                     </div>
 
                 </div>
 
                 <div class="emailing">
                     <label>
-                        <input class="your_email" type="text" placeholder="Your email..">
+                        <input class="your_email" type="email" placeholder="Your email..">
                     </label>
                     <button class="subscribe">subscribe</button>
                 </div>
@@ -634,9 +665,21 @@
 
         <div class="footer_block">
             <p class="suptitle_footer">instagram</p>
+            <div class="insta_block">
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/1.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/2.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/3.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/4.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/5.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/6.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/7.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/8.jpg" alt=""></a>
+                <a href="#" class="insta_icon"><img  src="assets/images/instagram/9.jpg" alt=""></a>
+            </div>
 
-                <img class="insta_icon" src="assets/images/insta_icon.jpg" alt="">
-                <p class="data_blog_footer"><a class="insta_link" href="#">view more photos</a></p>
+
+
+            <p class="data_blog_footer"><a class="insta_link" href="#">view more photos</a></p>
 
 
         </div>
