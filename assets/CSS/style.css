@@ -495,11 +495,11 @@ no-repeat;
 }
 
 .design__icon {
-    display: inline-block;
-    height: 60px;
-    width: content-box;
+    color: #95e1d3;
+    font-size: 32px;
     float: left;
-    margin-right: 5px;
+    margin-right: 15px;
+
 }
 
 .bar__text {
@@ -1260,6 +1260,31 @@ no-repeat;
         justify-content: center;
     }
 
+    .comment__text {
+       font-size: 15px;
+    }
+
+
+    .comment__image img {
+        width: 80%;
+    }
+
+    .comment__sigh {
+        font-size: 20px;
+    }
+
+    .attitude_card {
+    margin-bottom: 80px;
+    }
+
+    .attitude_card:last-child {
+        margin-bottom: 0;
+    }
+
+    .article_data {
+        display: none;
+    }
+
 
 }
 
@@ -1319,4 +1344,111 @@ no-repeat;
     }
 }
 
+/*test acc*/
+
+button.accordion {
+
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    display: flex;
+    vertical-align: center;
+
+
+    margin-top: 5px;
+    width: 600px;
+    height: 60px;
+    border: 1px solid #e5e5e5;
+
+    color:  #666;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+button.accordion:after {
+    /*content: '';*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*right: 20px;*/
+    /*z-index: 1;*/
+
+
+    /*width: 16px;*/
+    /*height: 16px;*/
+
+    /*border-top: 2px solid #cccccc ;*/
+    /*border-right: 2px solid #cccccc ;*/
+
+    /*transform: translateY(-50%) rotate(135deg);*/
+}
+
+button.accordion.is-open {
+    background-color: orange;
+    color: white;
+    /*content: "";*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*right: 20px;*/
+    /*z-index: 1;*/
+
+
+    /*width: 16px;*/
+    /*height: 16px;*/
+
+    /*border-top: 2px solid #cccccc ;*/
+    /*border-right: 2px solid #cccccc ;*/
+
+    /*transform: translateY(-50%) rotate(-45deg);*/
+}
+
+.acc_content {
+
+
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+    width: 600px;
+
+
+
+    overflow-y: auto;
+    text-align: left;
+    font-weight: 300;
+    vertical-align: center;
+    height: 180px;
+    color: #cccccc;
+    font-style: italic;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.acc_content::-webkit-scrollbar-track
+{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+
+}
+
+.acc_content::-webkit-scrollbar
+{
+    width: 6px;
+    scroll-margin: 50px 0 0 50px;
+    border-radius: 10px;
+
+
+}
+
+.acc_content::-webkit-scrollbar-thumb
+{
+    background-color: #95e1d3;
+    border-radius: 10px;
+}
 
