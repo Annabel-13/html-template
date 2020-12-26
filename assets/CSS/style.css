@@ -1189,6 +1189,12 @@ no-repeat;
 .insta_icon {
     flex: 1 1 0;
     border: 1px solid #fff;
+
+}
+
+.insta_icon img {
+    width: 88px;
+    height: 88px;
 }
 
 .insta_block {

@@ -77,8 +77,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function  getTestModal() {
    return [
        new ExpandedListModal('photography', `<i class="design__icon far fa-image"></i>`, ' First Lorem ipsum dolor sit amet, consectetur adipisicing elit. '),
-       new ExpandedListModal('creativity', `<i class="design__icon far fa-image"></i>`, 'Second  Lorem ipsum dolor sit amet, consectetur adipisicing elit. '),
-       new ExpandedListModal('three', `<i class="design__icon far fa-image"></i>`, 'Third Lorem ipsum dolor sit amet, consectetur adipisicing elit. ')
+       new ExpandedListModal('creativity', `<i class="design__icon fas fa-sliders-h"></i>`, 'Second  Lorem ipsum dolor sit amet, consectetur adipisicing elit. '),
+       new ExpandedListModal('web design', `<i class="design__icon fas fa-bullseye"></i>`, 'Third Lorem ipsum dolor sit amet, consectetur adipisicing elit. ')
    ];
 }
 
